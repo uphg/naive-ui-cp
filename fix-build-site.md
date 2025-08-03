@@ -22,4 +22,6 @@
 - ✅ 生成了完整的静态文件，包括 HTML、CSS、JS 和字体文件
 - ✅ 构建时间约 47 秒，生成了大量的演示文件和资源
 
-现在可以正常使用 `pnpm build:site` 命令来构建 Naive UI 的文档站点了
+现在可以正常使用 `pnpm build:site` 命令来构建 Naive UI 的文档站点
+
+运行 `pnpm vite preview --outDir site` 本地预览构建后的文档
