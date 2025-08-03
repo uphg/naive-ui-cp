@@ -11,20 +11,17 @@ export default defineConfig({
   root: __dirname,
   plugins: createDemoPlugin(),
   resolve: {
-    // In production site build, we want to import naive-ui from node_modules
-    alias:
-      process.env.NODE_ENV !== 'production'
-        ? [
-            {
-              find: 'naive-ui/generic',
-              replacement: path.resolve(__dirname, './generic')
-            },
-            {
-              find: 'naive-ui',
-              replacement: path.resolve(__dirname, './src')
-            }
-          ]
-        : undefined
+    // Use local source code for both development and production
+    alias: [
+      {
+        find: 'naive-ui/generic',
+        replacement: path.resolve(__dirname, './generic')
+      },
+      {
+        find: 'naive-ui',
+        replacement: path.resolve(__dirname, './src')
+      }
+    ]
   },
   define: {
     'process.env.NODE_ENV': `'${process.env.NODE_ENV}'`,
