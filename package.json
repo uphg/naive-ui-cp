@@ -96,7 +96,7 @@
     "@babel/parser": "^7.28.0",
     "@babel/preset-env": "^7.22.15",
     "@babel/traverse": "^7.28.0",
-    "@lylajs/web": "^1.2.2",
+    "@lylajs/web": "^2.1.0",
     "@rollup/plugin-babel": "^6.0.3",
     "@rollup/plugin-commonjs": "^26.0.1",
     "@rollup/plugin-node-resolve": "^15.2.1",
